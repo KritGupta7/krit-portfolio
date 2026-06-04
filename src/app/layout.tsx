@@ -16,12 +16,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(profile.siteUrl),
   title: profile.siteTitle,
   description: profile.siteDescription,
   openGraph: {
     title: profile.siteTitle,
     description: profile.siteDescription,
     type: "website",
+    url: profile.siteUrl,
   },
   twitter: {
     card: "summary_large_image",

@@ -1,4 +1,10 @@
+/** Production: https://kritgupta.com — set NEXT_PUBLIC_SITE_URL in Vercel Environment Variables */
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+  "http://localhost:3000";
+
 export const profile = {
+  siteUrl,
   name: "Krit Shreeram Gupta",
   firstName: "Krit",
   lastName: "Gupta",
